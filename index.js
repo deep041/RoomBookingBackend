@@ -22,7 +22,7 @@ app.use('/', routes);
 const server = require('http').Server(app);
 const io = require('socket.io')(server, {
     cors: {
-        origins: ['http://localhost:4200']
+        origins: ['http://localhost:4200', 'https://room-booking-iota.vercel.app']
     }
 });
 
