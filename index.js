@@ -11,7 +11,7 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
 const routes = require('./routes');
-const PORT = 3000;
+const PORT = process.env.API_PORT;
 
 app.get('/', (req, res) => {
     res.send('Project Started');
