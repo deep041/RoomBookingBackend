@@ -13,6 +13,10 @@ app.use(express.urlencoded({ extended: true }));
 const routes = require('./routes');
 const PORT = 3000;
 
+app.get('/', (req, res) => {
+    res.send('Project Started');
+});
+
 app.use('/', routes);
 
 const server = require('http').Server(app);
